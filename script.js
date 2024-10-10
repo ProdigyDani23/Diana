@@ -32,19 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let nextButton = document.getElementById('nextButton');
     let heartContainer = document.getElementById('heart-container');
 
-    // Reproducir la canción de cumpleaños al primer clic
     nextButton.addEventListener('click', () => {
         if (currentMessageIndex === 0) {
             birthdaySong.play();
         }
 
-        // Actualizar mensaje e imagen
+
         if (currentMessageIndex < messages.length) {
             messageContainer.textContent = messages[currentMessageIndex];
             imageElement.src = images[currentMessageIndex];
             currentMessageIndex++;
         } else {
-            // Mostrar animación final del corazón
+      
             messageContainer.textContent = "¡Diana, eres increíble y estoy muy agradecido de haberte conocido!";
             heartContainer.classList.remove('hidden');
             nextButton.classList.add('hidden');

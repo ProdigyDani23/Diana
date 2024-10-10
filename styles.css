@@ -37,7 +37,12 @@ h1 {
 }
 
 #image-container {
+    width: 100%;
+    max-width: 600px; 
+    height: 400px;
     margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
 #image {
@@ -65,14 +70,14 @@ button:hover {
     display: none;
 }
 
-/* Corazón animado */
+
 .heart {
     width: 100px;
     height: 100px;
     background-color: red;
     position: relative;
     margin-top: 20px;
-    transform: rotate(-45deg); /* Corregir la rotación */
+    transform: rotate(-45deg); 
     animation: pulse 1s infinite;
 }
 
@@ -87,16 +92,15 @@ button:hover {
 }
 
 .heart::before {
-    top: -50px; /* Ajuste para el círculo superior izquierdo */
+    top: -50px; 
     left: 0;
 }
 
 .heart::after {
     top: 0;
-    left: 50px; /* Ajuste para el círculo superior derecho */
+    left: 50px; 
 }
 
-/* Animación del corazón */
 @keyframes pulse {
     0% {
         transform: scale(1) rotate(-45deg);
@@ -106,5 +110,55 @@ button:hover {
     }
     100% {
         transform: scale(1) rotate(-45deg);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+        height: auto;
+    }
+
+    #message {
+        font-size: 20px;
+    }
+
+    #nextButton {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heart {
+        width: 80px;
+        height: 80px;
+    }
+
+    .heart::before,
+    .heart::after {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #message {
+        font-size: 18px;
+    }
+
+    #nextButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .heart {
+        width: 60px;
+        height: 60px;
+    }
+
+    .heart::before,
+    .heart::after {
+        width: 60px;
+        height: 60px;
     }
 }
