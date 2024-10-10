@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 600px;
+}
+
+#message-container {
+    margin-bottom: 20px;
+}
+
+#message {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 10px;
+}
+
+#image-container {
+    margin-bottom: 20px;
+}
+
+#image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff85c1;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Corazón animado */
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    margin-top: 20px;
+    transform: rotate(-45deg); /* Corregir la rotación */
+    animation: pulse 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.heart::before {
+    top: -50px; /* Ajuste para el círculo superior izquierdo */
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 50px; /* Ajuste para el círculo superior derecho */
+}
+
+/* Animación del corazón */
+@keyframes pulse {
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(-45deg);
+    }
+    100% {
+        transform: scale(1) rotate(-45deg);
+    }
+}
