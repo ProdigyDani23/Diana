@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     text-align: center;
     overflow: hidden;
+    position: relative; /* Contenedor padre con posición relativa */
 }
 
 h1 {
@@ -174,4 +175,22 @@ button:hover {
     #image-container {
         height: 200px; /* Altura aún menor para teléfonos */
     }
+}
+
+
+#nextButton {
+    position: absolute; /* Posición absoluta respecto al contenedor o página */
+    top: 20px;          /* Separación desde la parte superior de la página */
+    right: 20px;        /* Separación desde la parte derecha de la página */
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#nextButton:hover {
+    background-color: #ff1493;
 }
