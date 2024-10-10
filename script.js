@@ -31,22 +31,31 @@ document.addEventListener('DOMContentLoaded', () => {
     let imageElement = document.getElementById('image');
     let nextButton = document.getElementById('nextButton');
     let heartContainer = document.getElementById('heart-container');
-
+    
     nextButton.addEventListener('click', () => {
+       
         if (currentMessageIndex === 0) {
             birthdaySong.play();
         }
-
-
+    
+        
         if (currentMessageIndex < messages.length) {
             messageContainer.textContent = messages[currentMessageIndex];
             imageElement.src = images[currentMessageIndex];
             currentMessageIndex++;
+    
+            
+            if (!nextButton.classList.contains('flecha')) {
+                nextButton.classList.add('flecha');
+                nextButton.textContent = ''; 
+            }
+    
         } else {
-      
+           
             messageContainer.textContent = "¡Diana, eres increíble y estoy muy agradecido de haberte conocido!";
-            heartContainer.classList.remove('hidden');
-            nextButton.classList.add('hidden');
+            heartContainer.classList.remove('hidden'); 
+            nextButton.classList.add('hidden'); 
         }
     });
+    
 });
