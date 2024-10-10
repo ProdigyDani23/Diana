@@ -115,30 +115,3 @@ button:hover {
 }
 
 
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-        height: auto;
-    }
-
-    #message {
-        font-size: 20px;
-    }
-
-    #nextButton {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    .heart {
-        width: 80px;
-        height: 80px;
-    }
-
-    .heart::before,
-    .heart::after {
-        width: 80px;
-        height: 80px;
-    }
-}
-
