@@ -142,6 +142,19 @@ button:hover {
     }
 }
 
+/* Estilos responsivos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    #image-container {
+        height: 300px; /* Altura menor para pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #image-container {
+        height: 200px; /* Altura aún menor para teléfonos */
+    }
+}
+
 @media only screen and (max-width: 480px) {
     #message {
         font-size: 18px;
@@ -163,5 +176,3 @@ button:hover {
         height: 60px;
     }
 }
-
-
