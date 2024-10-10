@@ -8,14 +8,16 @@ body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to right, #fbc2eb, #a6c1ee);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; 
     align-items: center;
     height: 100vh;
     flex-direction: column;
     text-align: center;
     overflow: hidden;
-    position: relative; 
+    position: relative;
+    padding-top: 10px; 
 }
+
 
 h1 {
     color: #ff69b4;
@@ -141,4 +143,20 @@ button:hover {
     100% {
         transform: scale(1) rotate(-45deg);
     }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    #message {
+        font-size: 1.2rem; 
+    }
+
+    button {
+        font-size: 1rem; 
+        padding: 10px 20px;
+    }
+
 }
