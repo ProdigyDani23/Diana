@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "No solo eres una persona dedicada y trabajadora, también eres una hija excepcional. ¡Te mereces todo lo mejor en tu día y siempre!",
         "Cada año que pasa, sigues mostrando tu fuerza y determinación. ¡Feliz cumpleaños, mujer fuerte y admirable!",
         "Eres una mujer extraordinaria en todos los aspectos: como hija, hermana, y persona. ¡Que este día esté lleno de alegría y sorpresas que te hagan sonreír!",
-        "Aunque nos conocemos desde hace poco, me he dado cuenta de lo especial que eres. ¡Espero seguir compartiendo momentos increíbles contigo!",
-        "En estos meses he llegado a apreciarte mucho, y cada día me sorprendes más. ¡Espero que este sea solo el comienzo de algo aún más especial!",
-        "Eres una persona única, y cada día que paso contigo lo confirmo más. ¡Feliz cumpleaños a alguien muy especial que ha comenzado a ocupar un lugar importante en mi vida!"
+        " cada día descubro más lo increíble que eres. ¡Ojalá sigamos creando recuerdos inolvidables juntos y que Dios nos permita seguir compartiendo muchos más!",
+        "En este tiempo conociéndonos y compartiendo momentos, han sido bonitos y espero seguir creando momentos únicos a tu lado.",
+        "Eres alguien con quien cada momento se siente especial. Cada vez que te conozco más, me doy cuenta de la mujer tan maravillosa que eres. "
     ];
 
     const images = [
